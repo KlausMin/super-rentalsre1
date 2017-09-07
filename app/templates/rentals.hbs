@@ -1,0 +1,13 @@
+{{#each model as |rental|}}
+  <p><h2>{{rental.title}}</h2></p>
+  <div class="detail owner">
+    <span>Owner</span> : {{rental.owner}}
+  </div>
+  <div class="detail type">
+    <span>Type</span> : {{rental.propertyType}}
+  </div>
+{{/each}}
+
+{{#link-to 'about' class='button'}}
+  About Us
+{{/link-to}}
